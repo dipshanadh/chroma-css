@@ -1,5 +1,37 @@
-/* Colors */
-$primary: #326dee;
-$secondary: #1ac888;
-$error: #d32752;
-$info: #f6c31c;
+@use "variables" as *;
+
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  /* Light Variations */
+  @for $i from 1 through 4 {
+    $variant: $i * 100;
+
+    .text-#{$key}-light-#{$variant} {
+      color: mix(white, $val, $i * 20%);
+    }
+
+    .bg-#{$key}-light-#{$variant} {
+      background-color: mix(white, $val, $i * 20%);
+    }
+  }
+
+  /* Dark Variations */
+  @for $i from 1 through 4 {
+    $variant: $i * 100;
+
+    .text-#{$key}-dark-#{$variant} {
+      color: mix(black, $val, $i * 20%);
+    }
+
+    .bg-#{$key}-dark-#{$variant} {
+      background-color: mix(black, $val, $i * 20%);
+    }
+  }
+}

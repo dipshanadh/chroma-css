@@ -2,8 +2,11 @@
 @use "reset";
 @use "base";
 
+/* Colors */
+@use "colors";
+
 /* Components */
-@use "components/card";
+@use "components";
 
 /* Utilities */
 @use "utilities";
