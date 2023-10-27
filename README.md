@@ -1,6 +1,6 @@
 # Chroma CSS
 
-A simple CSS library built with Sass for learning purpose.
+A simple mini-CSS library built with Sass for learning purpose.
 
 ## Usage
 
