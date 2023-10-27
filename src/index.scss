@@ -1,4 +1,5 @@
-/* Google font */
+@use "variables" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
 /* Reset CSS */
@@ -78,21 +79,7 @@ select {
   }
 }
 
-/* Variables */
-
-/* Colors */
-$primary: #326dee;
-$secondary: #1ac888;
-$error: #d32752;
-$info: #f6c31c;
-
-/* Spacing */
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
-
-/* Borders */
-$base-border-thickness: 1px;
-$base-border-radius: 0.75rem;
+/* Components */
 
 h1 {
   color: $primary;
