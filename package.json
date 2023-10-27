@@ -1,0 +1,15 @@
+{
+  "name": "chroma-css",
+  "version": "1.0.0",
+  "description": "A simple CSS library built with Sass for learning purpose",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass ./src/index.scss ./dist/index.css --watch --no-source-map",
+    "build:sass": "sass ./src/index.scss ./dist/index.css --no-source-map --style=compressed"
+  },
+  "author": "Dipshan Adhikari <dipshanadh@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
