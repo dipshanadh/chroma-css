@@ -1,6 +1,9 @@
-/* Base and layout */
+// Reset CSS
 @use "reset";
+
+/* Base and layout */
 @use "base";
+@use "grid";
 
 /* Colors */
 @use "colors";
