@@ -1,23 +1,23 @@
-@use "../variables" as *;
+@use '../variables' as *;
 
 .card {
-  display: block;
-  padding: $base-padding;
-  border: $base-border-thickness solid #ddd;
-  box-shadow: $base-box-shadow;
-  border-radius: $base-border-radius;
+	display: block;
+	padding: $base-padding;
+	border: $base-border-thickness solid #ddd;
+	box-shadow: $base-box-shadow;
+	border-radius: $base-border-radius;
 
-  .card-title {
-    font-size: $font-size-lg;
-    padding-bottom: $base-padding;
-    font-weight: bold;
-  }
+	.card-title {
+		font-size: $font-size-lg;
+		padding-bottom: $base-padding;
+		font-weight: bold;
+	}
 
-  .card-body {
-    font-size: $base-font-size;
+	.card-body {
+		font-size: $base-font-size;
 
-    a {
-      text-decoration: underline;
-    }
-  }
+		a {
+			text-decoration: underline;
+		}
+	}
 }

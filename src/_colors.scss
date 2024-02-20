@@ -1,75 +1,75 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 @each $key, $val in $colors {
-  .text-#{$key} {
-    color: $val;
-  }
+	.text-#{$key} {
+		color: $val;
+	}
 
-  .hover\:text-#{$key} {
-    &:hover {
-      color: $val;
-    }
-  }
+	.hover\:text-#{$key} {
+		&:hover {
+			color: $val;
+		}
+	}
 
-  .bg-#{$key} {
-    background-color: $val;
-  }
+	.bg-#{$key} {
+		background-color: $val;
+	}
 
-  .hover\:bg-#{$key} {
-    &:hover {
-      background-color: $val;
-    }
-  }
+	.hover\:bg-#{$key} {
+		&:hover {
+			background-color: $val;
+		}
+	}
 
-  @if ($val != black and $val != white) {
-    /* Light Variations */
-    @for $i from 1 through 4 {
-      $variant: $i * 100;
+	@if ($val != black and $val != white) {
+		/* Light Variations */
+		@for $i from 1 through 4 {
+			$variant: $i * 100;
 
-      .text-#{$key}-light-#{$variant} {
-        color: mix(white, $val, $i * 20%);
-      }
+			.text-#{$key}-light-#{$variant} {
+				color: mix(white, $val, $i * 20%);
+			}
 
-      .hover\:text-#{$key}-light-#{$variant} {
-        &:hover {
-          color: mix(white, $val, $i * 20%);
-        }
-      }
+			.hover\:text-#{$key}-light-#{$variant} {
+				&:hover {
+					color: mix(white, $val, $i * 20%);
+				}
+			}
 
-      .bg-#{$key}-light-#{$variant} {
-        background-color: mix(white, $val, $i * 20%);
-      }
+			.bg-#{$key}-light-#{$variant} {
+				background-color: mix(white, $val, $i * 20%);
+			}
 
-      .hover\:bg-#{$key}-light-#{$variant} {
-        &:hover {
-          background-color: mix(white, $val, $i * 20%);
-        }
-      }
-    }
+			.hover\:bg-#{$key}-light-#{$variant} {
+				&:hover {
+					background-color: mix(white, $val, $i * 20%);
+				}
+			}
+		}
 
-    /* Dark Variations */
-    @for $i from 1 through 4 {
-      $variant: $i * 100;
+		/* Dark Variations */
+		@for $i from 1 through 4 {
+			$variant: $i * 100;
 
-      .text-#{$key}-dark-#{$variant} {
-        color: mix(black, $val, $i * 20%);
-      }
+			.text-#{$key}-dark-#{$variant} {
+				color: mix(black, $val, $i * 20%);
+			}
 
-      .hover\:text-#{$key}-dark-#{$variant} {
-        &:hover {
-          color: mix(black, $val, $i * 20%);
-        }
-      }
+			.hover\:text-#{$key}-dark-#{$variant} {
+				&:hover {
+					color: mix(black, $val, $i * 20%);
+				}
+			}
 
-      .bg-#{$key}-dark-#{$variant} {
-        background-color: mix(black, $val, $i * 20%);
-      }
+			.bg-#{$key}-dark-#{$variant} {
+				background-color: mix(black, $val, $i * 20%);
+			}
 
-      .hover\:bg-#{$key}-dark-#{$variant} {
-        &:hover {
-          background-color: mix(black, $val, $i * 20%);
-        }
-      }
-    }
-  }
+			.hover\:bg-#{$key}-dark-#{$variant} {
+				&:hover {
+					background-color: mix(black, $val, $i * 20%);
+				}
+			}
+		}
+	}
 }

@@ -1,15 +1,15 @@
 // Reset CSS
-@use "reset";
+@use 'reset';
 
 /* Base and layout */
-@use "base";
-@use "grid";
+@use 'base';
+@use 'grid';
 
 /* Colors */
-@use "colors";
+@use 'colors';
 
 /* Components */
-@use "components";
+@use 'components';
 
 /* Utilities */
-@use "utilities";
+@use 'utilities';
