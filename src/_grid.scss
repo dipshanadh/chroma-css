@@ -8,6 +8,7 @@ $grid-gaps: (
 	'2': 20px,
 	'3': 30px,
 );
+$layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // Base layout classes
 .container {
@@ -20,6 +21,25 @@ $grid-gaps: (
 .row {
 	display: flex;
 	flex-flow: row wrap;
+}
+
+// Grid gaps
+@each $key, $val in $grid-gaps {
+	.gap-#{$key} > * {
+		padding: $val;
+	}
+
+	.gap-#{$key} {
+		margin-left: -$val;
+		margin-right: -$val;
+	}
+}
+
+// Justify content classes
+@each $val in $layout-values {
+	.justify-#{$val} {
+		justify-content: $val;
+	}
 }
 
 // Column classes
